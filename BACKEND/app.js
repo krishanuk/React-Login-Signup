@@ -9,7 +9,7 @@ const app = express();
 app.use("/users", router);
 
 mongoose
-  .connect("mongodb+srv://admin:vhzRRhtsfQ35qrjR@cluster0.iim7c.mongodb.net/")
+  .connect("mongodb+srv://")
   .then(() => console.log("Connect to mongoDB"))
   .then(() => {
     app.listen(5000);
